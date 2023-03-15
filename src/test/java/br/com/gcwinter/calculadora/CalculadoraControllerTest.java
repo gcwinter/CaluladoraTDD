@@ -11,10 +11,10 @@ class CalculadoraControllerTest {
 
     CalculadoraControllerTest() {
         SomaService somaService = new SomaServiceImpl();
-        FatorialService fatorialService = new FatorialRecursivoServiceImpl();
+        FatorialService fatorialService = new FatorialServiceRecursivoImpl();
         FibonacciService fibonacciService = new FibonacciServiceImpl();
-        CalculoVini calculoVini = new CalculoVini(somaService,fatorialService,fibonacciService);
-        this.controller = new CalculadoraController(somaService, fatorialService, fibonacciService, calculoVini);
+        CalculoMalucoService calculoMalucoService = new CalculoMalucoServiceImpl(somaService,fatorialService,fibonacciService);
+        this.controller = new CalculadoraController(somaService, fatorialService, fibonacciService, calculoMalucoService);
     }
 
 
@@ -84,23 +84,23 @@ class CalculadoraControllerTest {
 
     @Test
     void testaCalculoComZero() {
-        assertEquals(2, controller.metodo(0));
+        assertEquals(2, controller.getFatorialSomaAlgarismosFibonacciSomaFibonacci(0));
     }
 
     @Test
     void testaCalculoComtres() {
         //TODO  dado o fatorial entre 0 e 10, soma de cada um dos numeros do fatorial, fibonacci da soma dos algarismos do fatorial.
-        assertEquals(33, controller.metodo(3));
+        assertEquals(33, controller.getFatorialSomaAlgarismosFibonacciSomaFibonacci(3));
     }
     @Test
     void testaCalculoComOnze() {
 
-        assertEquals(-1, controller.metodo(11));
+        assertEquals(-1, controller.getFatorialSomaAlgarismosFibonacciSomaFibonacci(11));
     }
     @Test
     void testaCalculoComMenosUm() {
 
-        assertEquals(-1, controller.metodo(-1));
+        assertEquals(-1, controller.getFatorialSomaAlgarismosFibonacciSomaFibonacci(-1));
     }
 
 

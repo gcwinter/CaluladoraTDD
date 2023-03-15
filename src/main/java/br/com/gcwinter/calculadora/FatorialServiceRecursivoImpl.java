@@ -1,6 +1,6 @@
 package br.com.gcwinter.calculadora;
 
-public class FatorialRecursivoServiceImpl implements FatorialService {
+public class FatorialServiceRecursivoImpl implements FatorialService {
     @Override
     public int fatorial(int numero) {
         if (numero == 0) {

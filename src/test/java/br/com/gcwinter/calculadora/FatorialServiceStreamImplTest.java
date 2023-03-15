@@ -4,11 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FatorialRecursivoServiceImplTest {
+class FatorialServiceStreamImplTest {
+
     private final FatorialService fatorialService;
 
-    FatorialRecursivoServiceImplTest() {
-        this.fatorialService = new FatorialRecursivoServiceImpl();
+    FatorialServiceStreamImplTest() {
+        this.fatorialService = new FatorialServiceStreamImpl();
     }
 
     @Test
@@ -39,4 +40,5 @@ class FatorialRecursivoServiceImplTest {
 
         assertEquals(5040, fatorialService.fatorial(7));
     }
+
 }
