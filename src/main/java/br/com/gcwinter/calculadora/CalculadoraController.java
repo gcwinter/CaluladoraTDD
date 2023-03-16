@@ -46,19 +46,5 @@ public class CalculadoraController {
 
     }
 
-    //TODO metodo novo que compara a performace entre a soma usando for e a soma utilizando stream.
-
-    void metodo1() {
-        int tempoInicial = (int) System.currentTimeMillis();
-        FatorialService a = new FatorialServiceImpl();
-        a.fatorial(50);
-        int tempoFinal = (int) System.currentTimeMillis();
-        int tempoFinalA = tempoFinal - tempoInicial;
-        System.out.println(tempoFinalA);
-
-        FatorialService b = new FatorialServiceRecursivoImpl();
-
-
-    }
     //TODO criar um metodo que dado um valor inicial e uma taxa de juros ao ano calcule o valor final.
 }
