@@ -1,5 +1,7 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.services.impl;
 
+import br.com.gcwinter.calculadora.services.SomaService;
+import br.com.gcwinter.calculadora.services.impl.SomaServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

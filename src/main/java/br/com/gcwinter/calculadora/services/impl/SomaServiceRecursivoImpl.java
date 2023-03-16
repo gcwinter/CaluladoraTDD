@@ -1,4 +1,6 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.services.impl;
+
+import br.com.gcwinter.calculadora.services.SomaService;
 
 import java.util.List;
 

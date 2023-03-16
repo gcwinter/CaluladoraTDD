@@ -1,5 +1,6 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.services.impl;
 
+import br.com.gcwinter.calculadora.services.FatorialService;
 import org.springframework.stereotype.Service;
 
 @Service

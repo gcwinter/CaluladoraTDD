@@ -1,6 +1,6 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.services.impl;
 
-import org.springframework.stereotype.Service;
+import br.com.gcwinter.calculadora.services.SomaService;
 
 import java.util.List;
 

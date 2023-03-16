@@ -1,5 +1,9 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.performace;
 
+import br.com.gcwinter.calculadora.services.FatorialService;
+import br.com.gcwinter.calculadora.services.impl.FatorialServiceImpl;
+import br.com.gcwinter.calculadora.services.impl.FatorialServiceRecursivoImpl;
+import br.com.gcwinter.calculadora.services.impl.FatorialServiceStreamImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.StopWatch;
 

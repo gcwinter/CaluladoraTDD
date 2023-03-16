@@ -1,10 +1,11 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.performace;
 
+import br.com.gcwinter.calculadora.services.FibonacciService;
+import br.com.gcwinter.calculadora.services.impl.FibonacciServiceImpl;
+import br.com.gcwinter.calculadora.services.impl.FibonacciServiceRecursivoImpl;
+import br.com.gcwinter.calculadora.services.impl.FibonacciServiceStreamImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.StopWatch;
-
-import java.util.List;
-import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

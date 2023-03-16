@@ -1,5 +1,11 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.controller;
 
+import br.com.gcwinter.calculadora.controller.CalculadoraController;
+import br.com.gcwinter.calculadora.services.*;
+import br.com.gcwinter.calculadora.services.impl.CalculoMalucoServiceImpl;
+import br.com.gcwinter.calculadora.services.impl.FatorialServiceRecursivoImpl;
+import br.com.gcwinter.calculadora.services.impl.FibonacciServiceImpl;
+import br.com.gcwinter.calculadora.services.impl.SomaServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

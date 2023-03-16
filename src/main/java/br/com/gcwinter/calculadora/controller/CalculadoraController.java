@@ -1,5 +1,9 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.controller;
 
+import br.com.gcwinter.calculadora.services.CalculoMalucoService;
+import br.com.gcwinter.calculadora.services.FatorialService;
+import br.com.gcwinter.calculadora.services.FibonacciService;
+import br.com.gcwinter.calculadora.services.SomaService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -46,5 +50,4 @@ public class CalculadoraController {
 
     }
 
-    //TODO criar um metodo que dado um valor inicial e uma taxa de juros ao ano calcule o valor final.
 }

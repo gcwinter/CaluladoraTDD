@@ -1,14 +1,12 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.services.impl;
 
-import java.util.function.IntBinaryOperator;
+import br.com.gcwinter.calculadora.services.FatorialService;
+
 import java.util.stream.IntStream;
 
-public class FatorialServiceStreamImpl implements FatorialService{
+public class FatorialServiceStreamImpl implements FatorialService {
     @Override
     public int fatorial(int numero) {
-        //TODO inicia
-        //TODO 1 2 3 4 5 ( 6 )
-        //TODO acumulador = 1, primeiro elemento * segundo elemento
 
         return IntStream
                  .range(1, numero + 1)

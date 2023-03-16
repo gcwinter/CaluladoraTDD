@@ -1,5 +1,7 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.services.impl;
 
+import br.com.gcwinter.calculadora.services.FibonacciService;
+import br.com.gcwinter.calculadora.services.impl.FibonacciServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

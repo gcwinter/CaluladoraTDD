@@ -1,4 +1,4 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.diferencaArrayList;
 
 import org.junit.jupiter.api.Test;
 

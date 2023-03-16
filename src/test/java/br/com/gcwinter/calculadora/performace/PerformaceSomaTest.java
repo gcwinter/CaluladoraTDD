@@ -1,5 +1,9 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.performace;
 
+import br.com.gcwinter.calculadora.services.SomaService;
+import br.com.gcwinter.calculadora.services.impl.SomaServiceImpl;
+import br.com.gcwinter.calculadora.services.impl.SomaServiceRecursivoImpl;
+import br.com.gcwinter.calculadora.services.impl.SomaServiceStreamImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.StopWatch;
 

@@ -1,5 +1,9 @@
-package br.com.gcwinter.calculadora;
+package br.com.gcwinter.calculadora.services.impl;
 
+import br.com.gcwinter.calculadora.services.CalculoMalucoService;
+import br.com.gcwinter.calculadora.services.FatorialService;
+import br.com.gcwinter.calculadora.services.FibonacciService;
+import br.com.gcwinter.calculadora.services.SomaService;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
