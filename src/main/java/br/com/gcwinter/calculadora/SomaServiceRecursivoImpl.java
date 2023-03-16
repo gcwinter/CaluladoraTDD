@@ -3,6 +3,7 @@ package br.com.gcwinter.calculadora;
 import java.util.List;
 
 public class SomaServiceRecursivoImpl implements SomaService {
+
     @Override
     public int soma(List<Integer> valores) {
         if (valores.isEmpty()) {

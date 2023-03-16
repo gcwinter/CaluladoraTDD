@@ -1,7 +1,11 @@
 package br.com.gcwinter.calculadora;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FibonacciServiceRecursivoImpl implements FibonacciService {
 
+    private final Map<Integer, Integer> cache = new HashMap<>();
 
     @Override
     public String fibonacci(int numero) {
@@ -15,13 +19,18 @@ public class FibonacciServiceRecursivoImpl implements FibonacciService {
 
     private int fibonacciRecursivo(int numero) {
 
+        if (cache.containsKey(numero)) {
+            return cache.get(numero);
+        }
         if (numero <= 1) {
             return 1;
         }
         int fibonacciPosicaoAnterior = fibonacciRecursivo(numero - 1);
         int fibonacciDeDuasPosicoesAtras = fibonacciRecursivo(numero - 2);
+        int soma = fibonacciDeDuasPosicoesAtras + fibonacciPosicaoAnterior;
 
-        return fibonacciDeDuasPosicoesAtras + fibonacciPosicaoAnterior;
+        cache.put(numero, soma);
+        return soma;
     }
 
 
